@@ -389,6 +389,7 @@
       <li><a href="#buscar"><i class="fas fa-search"></i> Buscar</a></li>
       <li><a href="#destaques"><i class="fas fa-star"></i> Destaques</a></li>
       <li><a href="#fornecedores"><i class="fas fa-star"></i> Buscar Fornecedores</a></li>
+      <li><a href="#cadastro"><i class="fas fa-star"></i> Cadastro de Fornecedor</a></li>
     </ul>
   </nav>
 
@@ -503,7 +504,7 @@
     </div>
   </div>
 
- <section id="fornecedores" style="padding:5px 20px;">
+  <section id="fornecedores" style="padding:5px 20px;">
     <div style="max-width:1200px; margin:0 auto;">
       <h2 style="color:#1a4b8e; font-size:2rem; text-align:center; margin-bottom:20px;">
         <i class="fas fa-building"></i> Buscar Fornecedores
@@ -558,10 +559,50 @@
             Ver Detalhes
           </button>
         </div>
-      </div>
+      </section>
+     <section id="cadastro" style="padding:5px 20px; background:#f9f9f9;">
+    <div style="max-width:1200px; margin:0 auto;">
+      <h2 style="color:#1a4b8e; font-size:2rem; text-align:center; margin-bottom:20px;">
+        <i class="fas fa-user-plus"></i> Cadastro de Fornecedores
+      </h2>
+      <p style="text-align:center; color:#555; font-size:1rem; margin-bottom:30px;">
+        Cadastre sua empresa para participar de licitações públicas e receber recomendações personalizadas.
+      </p>
+
+      <form style="max-width:600px; margin:0 auto; background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        <div style="margin-bottom:20px;">
+          <label for="nomeEmpresa" style="display:block; font-weight:600; margin-bottom:6px;">Nome da Empresa:</label>
+          <input type="text" id="nomeEmpresa" name="nomeEmpresa" placeholder="Digite o nome da empresa"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem;">
+        </div>
+
+        <div style="margin-bottom:20px;">
+          <label for="cnpj" style="display:block; font-weight:600; margin-bottom:6px;">CNPJ:</label>
+          <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem;">
+        </div>
+
+        <div style="margin-bottom:20px;">
+          <label for="email" style="display:block; font-weight:600; margin-bottom:6px;">E-mail de Contato:</label>
+          <input type="email" id="email" name="email" placeholder="contato@empresa.com"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem;">
+        </div>
+
+       <div style="margin-bottom:20px;">
+          <label for="email" style="display:block; font-weight:600; margin-bottom:6px;">Telefone para Contato:</label>
+          <input type="email" id="email" name="email" placeholder="(61) 99999-9999"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem;">
+        </div>
+
+        <div style="text-align:center;">
+          <button type="submit"
+            style="background:linear-gradient(to right,#2dcc9c,#1b9c7d); color:#fff; border:none; padding:12px 25px; border-radius:8px; font-weight:600; font-size:1rem; cursor:pointer;">
+            <i class="fas fa-paper-plane"></i> Enviar Cadastro
+          </button>
+        </div>
+      </form>
     </div>
   </section>
-
   <footer>
     <p>&copy; 2025 - Portal de Licitações Inteligente</p>
   </footer>
