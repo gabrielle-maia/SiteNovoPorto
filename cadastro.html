@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Fornecedores - Portal de Licitações Inteligente</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url("https://br-se1.magaluobjects.com/alfacon-production/images/images/000/029/787/original/BBTS-PAGO.jpg?1680549333.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 50px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    }
+
+    nav {
+      background-color: #1a4b8e;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1a4b8e;
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      background: linear-gradient(to right, #2dcc9c, #1b9c7d);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #1b9c7d, #0f6b54);
+    }
+
+    footer {
+      background-color: #270a8f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><i class="fas fa-user-plus"></i> Cadastro de Fornecedores</h1>
+    <p>Cadastre sua empresa para participar de licitações públicas</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="site1.html"><i class="fas fa-home"></i> Início</a></li>
+      <li><a href="produtos.html"><i class="fas fa-box"></i> Encontrar Produtos</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2><i class="fas fa-building"></i> Formulário de Cadastro</h2>
+
+    <form>
+      <label for="nomeEmpresa">Nome da Empresa:</label>
+      <input type="text" id="nomeEmpresa" placeholder="Digite o nome da empresa">
+
+      <label for="cnpj">CNPJ:</label>
+      <input type="text" id="cnpj" placeholder="00.000.000/0000-00">
+
+      <label for="email">E-mail de Contato:</label>
+      <input type="email" id="email" placeholder="contato@empresa.com">
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" placeholder="(61) 99999-9999">
+
+      <button type="submit"><i class="fas fa-paper-plane"></i> Enviar Cadastro</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - Portal de Licitações Inteligente</p>
+  </footer>
+</body>
+</html>
